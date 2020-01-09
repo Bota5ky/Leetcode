@@ -1,5 +1,5 @@
 package temp
-//pairs-of-songs-with-total-durations-divisible-by-60
+
 func numPairsDivisibleBy60(time []int) int {
 	m := make(map[int]int)
 	cnt := 0
