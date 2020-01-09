@@ -1,5 +1,5 @@
 package temp
-
+///sum-of-even-numbers-after-queries
 func sumEvenAfterQueries(A []int, queries [][]int) []int {
 	sum := 0
 	for i := 0; i < len(A); i++ {
