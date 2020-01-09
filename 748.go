@@ -1,5 +1,5 @@
 package temp
-
+//shortest-completing-word
 import "strings"
 
 func shortestCompletingWord(licensePlate string, words []string) string {
