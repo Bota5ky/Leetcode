@@ -1,6 +1,6 @@
 package temp
 
-func levelOrder(root *TreeNode) [][]int {
+func levelOrder2(root *TreeNode) [][]int {
 	var ret [][]int
 	j := 0
 	stack := []*TreeNode{root}
