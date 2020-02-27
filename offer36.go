@@ -8,15 +8,15 @@ func treeToDoublyList(root *TreeNode) *TreeNode {
 	if root == nil {
 		return nil
 	}
-	treeToDoublyList(root.Left) //左
-	if head == nil {            //根
-		head = root
-		realHead = root
+	node := treeToDoublyList(root.Left) //左
+	if head == nil {                    //根
+		head = node
+		realHead = node
 	} else {
-		head.Right = root
-		root.Left = head
-		head = root
+		head.Right = node
+		node.Left = head
+		head = node
 	}
-	treeToDoublyList(root.Right) //右
+	node = treeToDoublyList(root.Right) //右
 	return realHead
 }
