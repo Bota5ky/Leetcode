@@ -1,4 +1,5 @@
 package temp
+
 //未测试
 var head *TreeNode     //定义链表当前结点
 var realHead *TreeNode //定义链表头部的结点
@@ -8,7 +9,7 @@ func treeToDoublyList(root *TreeNode) *TreeNode {
 		return nil
 	}
 	treeToDoublyList(root.Left) //左
-	if head == nil { //根
+	if head == nil {            //根
 		head = root
 		realHead = root
 	} else {
@@ -16,7 +17,6 @@ func treeToDoublyList(root *TreeNode) *TreeNode {
 		root.Left = head
 		head = root
 	}
-
 	treeToDoublyList(root.Right) //右
 	return realHead
 }
