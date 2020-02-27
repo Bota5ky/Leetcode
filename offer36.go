@@ -1,21 +1,21 @@
 package temp
 
 //未测试
-var head *TreeNode     //定义链表当前结点
-var realHead *TreeNode //定义链表头部的结点
+var prenode *TreeNode     //比当前root节点小的节点
+var realHead *TreeNode //定义链表头部的结点，最小值
 //中序递归遍历修改链表指针即可实现
 func treeToDoublyList(root *TreeNode) *TreeNode {
 	if root == nil {
 		return nil
 	}
 	treeToDoublyList(root.Left) //左
-	if head == nil {            //根
-		head = root
+	if prenode == nil {            //根
+		prenode = root
 		realHead = root
 	} else {
-		head.Right = root
-		root.Left = head
-		head = root
+		prenode.Right = root
+		root.Left = prenode
+		prenode = root
 	}
 	treeToDoublyList(root.Right) //右
 	return realHead
