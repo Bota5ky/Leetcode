@@ -1,18 +1,30 @@
 package temp
 
+//迭代
 func reverseList(head *ListNode) *ListNode {
-	if head == nil {
+	if head == nil || head.Next == nil {
 		return head
 	}
-	var a *ListNode
-	c := head.Next
+	var prehead *ListNode
+	rear := head.Next
 	for head != nil {
-		head.Next = a
-		a = head
-		head = c
-		if c != nil {
-			c = c.Next
+		head.Next = prehead
+		prehead = head
+		head = rear
+		if rear != nil {
+			rear = rear.Next
 		}
 	}
-	return a
+	return prehead
+}
+
+//递归
+func reverseList2(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
+		return head
+	}
+	p := reverseList(head.Next)
+	head.Next.Next = head
+	head.Next = nil
+	return p
 }
