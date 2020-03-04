@@ -1,7 +1,7 @@
 package temp
 
 //不使用额外空间的暴力方法 O(N^2)
-func removeDuplicateNodes2(head *ListNode) *ListNode {
+func removeDuplicateNodes(head *ListNode) *ListNode {
 	ret := head
 	for head != nil {
 		pre := head
