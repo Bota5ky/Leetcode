@@ -9,7 +9,7 @@ package temp
  */
 
 //双指针
-func kthToLast2(head *ListNode, k int) int {
+func kthToLast(head *ListNode, k int) int {
 	rear := head
 	for rear != nil && k > 0 {
 		rear = rear.Next
