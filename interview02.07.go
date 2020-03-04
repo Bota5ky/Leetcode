@@ -1,6 +1,6 @@
 package temp
 
-func getIntersectionNode(headA, headB *ListNode) *ListNode {
+func getIntersectionNode2(headA, headB *ListNode) *ListNode {
 	a := headA
 	b := headB
 	for headA != nil || headB != nil {
