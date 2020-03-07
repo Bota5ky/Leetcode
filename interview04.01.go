@@ -13,11 +13,11 @@ func findWhetherExistsPath(n int, graph [][]int, start int, target int) bool {
 func dfs2(g [][]int, start int, target int, visited map[int]bool) bool {
 	visited[start] = true
 	for i := 0; i < len(g[start]); i++ {
-		if visited[g[start][i]] {
-			continue
-		}
 		if g[start][i] == target {
 			return true
+		}
+		if visited[g[start][i]] {
+			continue
 		}
 		if dfs2(g, g[start][i], target, visited) {
 			return true
