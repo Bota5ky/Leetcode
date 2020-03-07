@@ -1,6 +1,6 @@
 package temp
 
-func missingNumber(nums []int) int {
+func missingNumber2(nums []int) int {
 	n := len(nums)
 	sum := n * (n + 1) / 2
 	for i := 0; i < len(nums); i++ {
