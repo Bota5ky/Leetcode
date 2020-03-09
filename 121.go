@@ -1,6 +1,6 @@
 package temp
 
-func maxProfit(prices []int) int {
+func maxProfit2(prices []int) int {
 	stack1 := make([]int, len(prices))
 	stack2 := make([]int, len(prices))
 	for i := 0; i < len(prices); i++ {
