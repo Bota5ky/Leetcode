@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/
 func maxProfit(prices []int) int {
 	minStack := make([]int, len(prices))
 	max := 0
