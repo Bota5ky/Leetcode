@@ -1,6 +1,6 @@
-package temp
+package leetcode
 
-//backspace-string-compare
+//https://leetcode-cn.com/problems/backspace-string-compare/
 func backspaceCompare(S string, T string) bool {
 	dealStr(&S)
 	dealStr(&T)
