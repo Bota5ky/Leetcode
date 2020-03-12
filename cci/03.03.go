@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/stack-of-plates-lcci/
 //StackOfPlates StackOfPlates
 type StackOfPlates struct {
 	size   int
