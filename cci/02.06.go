@@ -1,7 +1,7 @@
 package leetcode
 
-//https://leetcode-cn.com/problems/palindrome-linked-list-lcci/
 //O(n) 时间复杂度和 O(1) 空间复杂度
+//https://leetcode-cn.com/problems/palindrome-linked-list-lcci/
 func isPalindrome(head *ListNode) bool {
 	if head == nil || head.Next == nil {
 		return true
