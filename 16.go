@@ -2,7 +2,6 @@ package leetcode
 
 import "sort"
 
-//3sum-closest
 //https://leetcode-cn.com/problems/3sum-closest/
 func threeSumClosest(nums []int, target int) int {
 	sort.Ints(nums)
