@@ -1,5 +1,7 @@
-package temp
+package leetcode
 
+//和239相同
+//https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/
 func maxSlidingWindow(nums []int, k int) []int {
 	//双端队列
 	var q, res []int
