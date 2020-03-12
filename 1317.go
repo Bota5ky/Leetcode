@@ -1,11 +1,11 @@
-package temp
+package leetcode
 
 import (
 	"strconv"
 	"strings"
 )
 
-//convert-integer-to-the-sum-of-two-no-zero-integers
+//https://leetcode-cn.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/
 func getNoZeroIntegers(n int) []int {
 	var i int
 	for i = 1; ; i++ {
