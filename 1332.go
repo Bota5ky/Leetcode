@@ -1,6 +1,6 @@
-package temp
+package leetcode
 
-//remove-palindromic-subsequences
+//https://leetcode-cn.com/problems/remove-palindromic-subsequences/
 func removePalindromeSub(s string) int {
 	if len(s) == 0 {
 		return 0
