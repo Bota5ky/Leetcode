@@ -1,6 +1,6 @@
-package temp
+package leetcode
 
-//count-square-submatrices-with-all-ones
+//https://leetcode-cn.com/problems/count-square-submatrices-with-all-ones/
 func countSquares(matrix [][]int) int {
 	cnt:=0
     for i:= 0; i<len(matrix); i++ {
