@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	//保证p在左 q在右
 	if p.Val > q.Val {
