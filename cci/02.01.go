@@ -1,6 +1,7 @@
-package temp
+package leetcode
 
 //不使用额外空间的暴力方法 O(N^2)
+//https://leetcode-cn.com/problems/remove-duplicate-node-lcci/
 func removeDuplicateNodes(head *ListNode) *ListNode {
 	ret := head
 	for head != nil {
