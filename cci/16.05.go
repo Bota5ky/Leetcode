@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/factorial-zeros-lcci/
 func trailingZeroes(n int) int {
 	i := 5
 	cnt := 0
