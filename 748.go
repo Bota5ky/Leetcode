@@ -1,7 +1,8 @@
-package temp
-//shortest-completing-word
+package leetcode
+
 import "strings"
 
+//https://leetcode-cn.com/problems/shortest-completing-word/
 func shortestCompletingWord(licensePlate string, words []string) string {
 	licensePlate = strings.ToLower(licensePlate)
 	m := make(map[byte]int)
