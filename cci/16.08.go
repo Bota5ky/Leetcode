@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/english-int-lcci/
 //和273相同
 func numberToWords2(num int) string {
     //123,456,789   billion million thousand hundred 1~9 or 10~19 or **ty + 个位数
