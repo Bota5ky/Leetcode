@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/find-majority-element-lcci/
 //摩尔投票法 offer39使用先排序取中间值，未考虑不存在的情况
 func majorityElement2(nums []int) int {
 	cnt := 0
