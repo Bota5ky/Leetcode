@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/get-kth-magic-number-lcci/
 func getKthMagicNumber(k int) int {
 	ret := make([]int, k)
 	ret[0] = 1
