@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/
 // func lastRemaining(n int, m int) int {
 // 	nums := make([]int, n)
 // 	for i := 0; i < n; i++ {
