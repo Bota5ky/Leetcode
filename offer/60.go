@@ -1,7 +1,8 @@
-package temp
+package leetcode
 
 import "math"
 
+//https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/
 func twoSum(n int) []float64 {
 	//f(n,s)=f(n-1,s-1)+f(n-1,s-2)+f(n-1,s-3)+f(n-1,s-4)+f(n-1,s-5)+f(n-1,s-6)
 	//f(1,1)=f(1,2)=f(1,3)=f(1,4)=f(1,5)=f(1,6)=1
