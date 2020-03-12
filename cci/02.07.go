@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/
 func getIntersectionNode2(headA, headB *ListNode) *ListNode {
 	a := headA
 	b := headB
