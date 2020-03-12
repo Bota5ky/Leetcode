@@ -1,6 +1,6 @@
-package temp
+package leetcode
 
-//CheckPermutation CheckPermutation
+//https://leetcode-cn.com/problems/check-permutation-lcci/
 func CheckPermutation(s1 string, s2 string) bool {
 	if len(s1) != len(s2) {
 		return false
