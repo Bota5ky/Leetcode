@@ -1,15 +1,8 @@
-package temp
+package leetcode
 
 import "strconv"
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+//https://leetcode-cn.com/problems/binary-tree-paths/
 func binaryTreePaths(root *TreeNode) []string {
 	if root == nil {
 		return []string{}
