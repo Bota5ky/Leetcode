@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/animal-shelter-lcci/
 //AnimalShelf AnimalShelf
 type AnimalShelf struct {
 	cat []int
