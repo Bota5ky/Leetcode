@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/exchange-lcci/
 func exchangeBits(num int) int {
 	for i := 0; ; i += 2 {
 		if num>>i == 0 {
