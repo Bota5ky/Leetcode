@@ -1,4 +1,4 @@
-package temp
+package leetcode
 
 import (
 	"strconv"
@@ -6,6 +6,7 @@ import (
 )
 
 //Codec strings.Join 还有一个函数未写完
+//https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/
 func Codec(root *TreeNode) string {
 	var ret []string
 	stack := []*TreeNode{root}
