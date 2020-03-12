@@ -1,13 +1,6 @@
-package temp
+package leetcode
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+//https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/
 func isSubStructure(A *TreeNode, B *TreeNode) bool {
 	//遍历判断是否是相同节点
 	if A == nil {
