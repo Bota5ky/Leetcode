@@ -1,6 +1,7 @@
-package temp
+package leetcode
 
 //MedianFinder MedianFinder
+//https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/
 type MedianFinder struct {
 	maxheap []int
 	minheap []int
