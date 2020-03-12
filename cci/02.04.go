@@ -1,12 +1,6 @@
-package temp
+package leetcode
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
+//https://leetcode-cn.com/problems/partition-list-lcci/
 func partition(head *ListNode, x int) *ListNode {
 	res := head
 	rear := head
