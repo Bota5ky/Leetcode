@@ -1,8 +1,8 @@
-package temp
+package leetcode
 
 import "math"
 
-//powerful-integers
+//https://leetcode-cn.com/problems/powerful-integers/
 func powerfulIntegers(x int, y int, bound int) []int {
 	var ret []int
 	m := make(map[int]bool)
