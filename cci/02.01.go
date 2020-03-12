@@ -19,6 +19,7 @@ func removeDuplicateNodes(head *ListNode) *ListNode {
 	return ret
 }
 
+//ListNode 链表
 type ListNode struct {
 	Val  int
 	Next *ListNode
