@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/color-fill-lcci/
 func floodFill(image [][]int, sr int, sc int, newColor int) [][]int {
 	fillColor(image, sr, sc, image[sr][sc], newColor)
 	return image
