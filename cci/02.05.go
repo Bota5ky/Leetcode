@@ -1,7 +1,7 @@
 package leetcode
 
-//https://leetcode-cn.com/problems/sum-lists-lcci/
 //数字反向存放
+//https://leetcode-cn.com/problems/sum-lists-lcci/
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	plus := 0
 	pre := &ListNode{}
