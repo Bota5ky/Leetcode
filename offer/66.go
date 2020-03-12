@@ -1,6 +1,7 @@
-package temp
+package leetcode
 
 //从左到右 从右到左 各遍历一次
+//https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/
 func constructArr(a []int) []int {
 	if len(a) == 0 {
 		return []int{}
