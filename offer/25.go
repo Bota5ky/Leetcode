@@ -1,5 +1,6 @@
 package leetcode
 
+//和21相同
 //https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	ret := &ListNode{}
