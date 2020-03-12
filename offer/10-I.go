@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/
 func fib(n int) int {
 	if n == 0 {
 		return 0
