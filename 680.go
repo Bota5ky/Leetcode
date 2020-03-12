@@ -1,6 +1,6 @@
-package temp
+package leetcode
 
-//valid-palindrome-ii
+//https://leetcode-cn.com/problems/valid-palindrome-ii/
 func validPalindrome(s string) bool {
 	j := len(s) - 1
 	for i := 0; i < j; i++ {
