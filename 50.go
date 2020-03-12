@@ -13,7 +13,7 @@ func myPow2(x float64, n int) float64 {
 		x = 1.0 / x
 		n = -n
 	}
-	return calc(x, n)
+	return calc2(x, n)
 }
 
 func calc2(x float64, n int) float64 {
@@ -22,7 +22,7 @@ func calc2(x float64, n int) float64 {
 	} else if n == 1 {
 		return x
 	}
-	res := calc(x, n>>1)
+	res := calc2(x, n>>1)
 	if n&1 == 1 {
 		return res * res * x
 	}
