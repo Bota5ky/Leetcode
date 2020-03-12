@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/distribute-candies-to-people/
 func distributeCandies(candies int, numPeople int) []int {
 	ret := make([]int, numPeople)
 	j := 1
