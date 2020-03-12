@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/
 func deleteNode(head *ListNode, val int) *ListNode {
 	mark := &ListNode{0, head}
 	res := mark
