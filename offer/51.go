@@ -1,10 +1,11 @@
-package temp
+package leetcode
 
 func reversePairs(nums []int) int {
 	return mergeSort(nums, 0, len(nums)-1)
 }
 
 //归并排序
+//https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/
 func mergeSort(nums []int, head int, rear int) int {
 	if head >= rear {
 		return 0
