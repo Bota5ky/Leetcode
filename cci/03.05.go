@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/sort-of-stacks-lcci/
 //SortedStack SortedStack
 type SortedStack struct {
 	stack   []int
