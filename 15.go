@@ -1,8 +1,9 @@
-package temp
+package leetcode
 
 import "sort"
 
 //3sum
+//https://leetcode-cn.com/problems/3sum/
 func threeSum(nums []int) [][]int {
 	sort.Ints(nums)
 	var ret [][]int
