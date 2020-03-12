@@ -1,6 +1,6 @@
-package temp
+package leetcode
 
-//verifying-an-alien-dictionary
+//https://leetcode-cn.com/problems/verifying-an-alien-dictionary/
 func isAlienSorted(words []string, order string) bool {
 	//录入字典序
 	m := make(map[byte]int)
