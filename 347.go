@@ -1,6 +1,7 @@
-package temp
+package leetcode
 
 //top-k-frequent-elements
+//https://leetcode-cn.com/problems/top-k-frequent-elements/
 func topKFrequent(nums []int, k int) []int {
 	m := make(map[int]int)
 	cnt := make([]int, k)
