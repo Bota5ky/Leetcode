@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/jian-sheng-zi-lcof/
 func cuttingRope(n int) int {
 	switch n {
 	case 2:
