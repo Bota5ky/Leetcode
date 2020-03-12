@@ -1,13 +1,6 @@
-package temp
+package leetcode
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+//https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/
 func kthLargest(root *TreeNode, k int) int {
 	var nums []int
 	list(root, &nums)
