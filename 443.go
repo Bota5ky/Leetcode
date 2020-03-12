@@ -1,8 +1,8 @@
-package temp
+package leetcode
 
 import "strconv"
 
-//string-compression
+//https://leetcode-cn.com/problems/string-compression/
 func compress(chars []byte) int {
 	slow := 0
 	for i := 0; i < len(chars); i++ {
