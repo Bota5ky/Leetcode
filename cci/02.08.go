@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/linked-list-cycle-lcci/
 func detectCycle(head *ListNode) *ListNode {
 	slow, fast, rec := head, head, head
 	for fast != nil && fast.Next != nil {
