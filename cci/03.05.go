@@ -1,7 +1,7 @@
 package leetcode
 
-//https://leetcode-cn.com/problems/sort-of-stacks-lcci/
 //SortedStack SortedStack
+//https://leetcode-cn.com/problems/sort-of-stacks-lcci/
 type SortedStack struct {
 	stack   []int
 	support []int
