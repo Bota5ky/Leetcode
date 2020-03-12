@@ -1,7 +1,7 @@
 package leetcode
 
-//https://leetcode-cn.com/problems/three-in-one-lcci/
 //TripleInOne Triple []int
+//https://leetcode-cn.com/problems/three-in-one-lcci/
 type TripleInOne struct {
 	stack []int
 	//0+3i 1+3i 2+3i  0 1 2记录数目 3 4 5 开始存数
