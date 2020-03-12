@@ -1,8 +1,8 @@
-package temp
+package leetcode
 
 import "strings"
 
-//license-key-formatting
+//https://leetcode-cn.com/problems/license-key-formatting/
 func licenseKeyFormatting(S string, K int) string {
 	S = strings.ToUpper(S)
 	S = strings.Replace(S, "-", "", -1)
