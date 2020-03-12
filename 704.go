@@ -1,5 +1,6 @@
-package temp
-///binary-search
+package leetcode
+
+//https://leetcode-cn.com/problems/binary-search/
 func search(nums []int, target int) int {
 	head := 0
 	rear := len(nums) - 1
