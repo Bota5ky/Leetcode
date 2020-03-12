@@ -16,3 +16,10 @@ func connect(root *TreeNode, pre **TreeNode) {
 	root.Right = (*pre)
 	*pre = root
 }
+
+//TreeNode 二叉树
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
