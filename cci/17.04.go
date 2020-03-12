@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/missing-number-lcci/
 func missingNumber2(nums []int) int {
 	n := len(nums)
 	sum := n * (n + 1) / 2
