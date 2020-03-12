@@ -1,5 +1,6 @@
 package leetcode
 
+//CheckPermutation 判定是否互为字符重排
 //https://leetcode-cn.com/problems/check-permutation-lcci/
 func CheckPermutation(s1 string, s2 string) bool {
 	if len(s1) != len(s2) {
