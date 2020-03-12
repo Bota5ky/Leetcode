@@ -1,6 +1,6 @@
-package temp
+package leetcode
 
-//longest-palindrome
+//https://leetcode-cn.com/problems/longest-palindrome/
 func longestPalindrome(s string) int {
 	var sum int
 	m := make(map[byte]int)
