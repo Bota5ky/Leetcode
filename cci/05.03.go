@@ -1,6 +1,6 @@
 package leetcode
 
-https://leetcode-cn.com/problems/reverse-bits-lcci/
+//https://leetcode-cn.com/problems/reverse-bits-lcci/
 func reverseBits(num int) int {
 	max, n1, n2 := 0, 0, 0
 	for {
