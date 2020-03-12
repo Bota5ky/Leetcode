@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/three-in-one-lcci/
 //TripleInOne Triple []int
 type TripleInOne struct {
 	stack []int
