@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/rotting-oranges/
 func orangesRotting(grid [][]int) int {
 	time := 0
 	for {
