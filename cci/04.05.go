@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/legal-binary-search-tree-lcci/
 //中序遍历 是否严格升序
 func isValidBST(root *TreeNode) bool {
 	var vals []int
