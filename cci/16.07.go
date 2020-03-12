@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/maximum-lcci/
 func maximum(a int, b int) int {
 	// abs(x) = ( x ^ (x >> 7)) - ( x >> 7 )
 	// max = ( a+b + |a-b| ) / 2
