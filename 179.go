@@ -1,8 +1,9 @@
-package temp
+package leetcode
 
 import "strconv"
 
 //和offer45类似
+//https://leetcode-cn.com/problems/largest-number/
 func largestNumber(nums []int) string {
 	var strNums []string
 	for i := 0; i < len(nums); i++ {
