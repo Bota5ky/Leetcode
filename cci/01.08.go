@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/zero-matrix-lcci/
 func setZeroes(matrix [][]int) {
 	if len(matrix) == 0 || len(matrix[0]) == 0 {
 		return
