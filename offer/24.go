@@ -1,6 +1,7 @@
-package temp
+package leetcode
 
 //迭代
+//https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/
 func reverseList(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head
