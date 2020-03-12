@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/delete-middle-node-lcci/
 func deleteNode2(node *ListNode) {
 	*node = *node.Next
 }
