@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/route-between-nodes-lcci/
 func findWhetherExistsPath(n int, graph [][]int, start int, target int) bool {
 	//[0] {1,2,3,...}
 	g := make([][]int, n)
