@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/palindrome-permutation-lcci/
 func canPermutePalindrome(s string) bool {
 	numOfOdd := 0
 	m := make(map[rune]bool)
