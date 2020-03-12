@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/
 func findContinuousSequence(target int) [][]int {
 	var ret [][]int
 	i, j := 1, 2
