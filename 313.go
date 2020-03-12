@@ -1,6 +1,7 @@
-package temp
+package leetcode
 
 //super-ugly-number
+//https://leetcode-cn.com/problems/super-ugly-number/
 func nthSuperUglyNumber(n int, primes []int) int {
 	k:=len(primes)
 	res:=make([]int,n)
