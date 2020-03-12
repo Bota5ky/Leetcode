@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/
 func validateStackSequences(pushed []int, popped []int) bool {
 	var stack []int
 	j := 0
