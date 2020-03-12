@@ -1,6 +1,7 @@
-package temp
+package leetcode
 
 //product-of-array-except-self
+//https://leetcode-cn.com/problems/product-of-array-except-self/
 func productExceptSelf(nums []int) []int {
 	ret := make([]int, len(nums))
 	ret[0] = 1
