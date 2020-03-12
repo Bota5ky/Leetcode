@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/rotate-matrix-lcci/
 func rotate(matrix [][]int) {
 	//转置
 	for i := 0; i < len(matrix); i++ {
