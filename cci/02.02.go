@@ -1,7 +1,7 @@
 package leetcode
 
-//https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci/
 //双指针
+//https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci/
 func kthToLast(head *ListNode, k int) int {
 	rear := head
 	for rear != nil && k > 0 {
