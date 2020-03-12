@@ -2,7 +2,6 @@ package leetcode
 
 import "math"
 
-//divide-two-integers
 //https://leetcode-cn.com/problems/divide-two-integers/
 func divide(dividend int, divisor int) int {
 	if dividend == math.MinInt32 && divisor == -1 {
