@@ -1,7 +1,7 @@
 package leetcode
 
-//https://leetcode-cn.com/problems/animal-shelter-lcci/
 //AnimalShelf AnimalShelf
+//https://leetcode-cn.com/problems/animal-shelter-lcci/
 type AnimalShelf struct {
 	cat []int
 	dog []int
