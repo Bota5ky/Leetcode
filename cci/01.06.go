@@ -1,7 +1,8 @@
-package temp
+package leetcode
 
 import "strconv"
 
+//https://leetcode-cn.com/problems/compress-string-lcci/
 func compressString(S string) string {
 	cnt := 1
 	var str string
