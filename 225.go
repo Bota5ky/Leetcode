@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/implement-stack-using-queues/
 //MyStack MyStack
 type MyStack struct {
 	q1 []int
