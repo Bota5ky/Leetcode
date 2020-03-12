@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/robot-in-a-grid-lcci/
 func pathWithObstacles(obstacleGrid [][]int) [][]int {
 	var res, routine [][]int
 	visited := make([][]bool, len(obstacleGrid))
