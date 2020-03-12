@@ -1,13 +1,6 @@
-package temp
+package leetcode
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+//https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/
 func isBalanced(root *TreeNode) bool {
 	if root == nil {
 		return true
