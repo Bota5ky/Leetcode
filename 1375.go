@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/bulb-switcher-iii/
 func numTimesAllBlue(light []int) int {
 	cnt := 0
 	sum := 0
