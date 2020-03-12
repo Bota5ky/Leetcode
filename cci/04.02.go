@@ -10,3 +10,10 @@ func sortedArrayToBST(nums []int) *TreeNode {
 	node.Right = sortedArrayToBST(nums[len(nums)/2+1:])
 	return node
 }
+
+//TreeNode 二叉树
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
