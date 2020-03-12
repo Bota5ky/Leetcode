@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/sparse-array-search-lcci/
 func findString(words []string, s string) int {
 	i, j := 0, len(words)-1
 	for i < j {
