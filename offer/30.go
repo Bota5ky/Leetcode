@@ -1,15 +1,7 @@
-package temp
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * obj := Constructor();
- * obj.Push(x);
- * obj.Pop();
- * param_3 := obj.Top();
- * param_4 := obj.Min();
- */
+package leetcode
 
 //MinStack MinStack
+//https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/
 type MinStack struct {
 	data    []int
 	support []int
