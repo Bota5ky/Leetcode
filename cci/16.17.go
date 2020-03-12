@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/contiguous-sequence-lcci/
 //比offer42严谨
 func maxSubArray2(nums []int) int {
 	maxSum := nums[0]
