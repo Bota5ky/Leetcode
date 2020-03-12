@@ -1,7 +1,8 @@
-package temp
+package leetcode
 
 import "sort"
 
+//https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/
 func isStraight(nums []int) bool {
 	sort.Ints(nums)
 	numOfZero := 0
