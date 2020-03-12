@@ -1,5 +1,6 @@
-package temp
-//maximum-69-number
+package leetcode
+
+//https://leetcode-cn.com/problems/maximum-69-number/
 import (
 	"strconv"
 )
