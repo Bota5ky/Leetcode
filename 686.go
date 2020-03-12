@@ -1,8 +1,8 @@
-package temp
+package leetcode
 
 import "strings"
 
-//repeated-string-match
+//https://leetcode-cn.com/problems/repeated-string-match/
 func repeatedStringMatch(A string, B string) int {
 	maxlen := len(A)*2 + len(B)
 	cnt := 1
