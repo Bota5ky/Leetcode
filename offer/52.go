@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/
 func getIntersectionNode(headA, headB *ListNode) *ListNode {
 	a := headA
 	b := headB
