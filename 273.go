@@ -1,8 +1,9 @@
-package temp
+package leetcode
 
 import "strconv"
 
 //integer-to-english-words
+//https://leetcode-cn.com/problems/integer-to-english-words/
 func numberToWords(num int) string {
 	if num == 0 {
 		return "Zero"
