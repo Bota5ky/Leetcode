@@ -1,7 +1,7 @@
 package leetcode
 
-//https://leetcode-cn.com/problems/stack-of-plates-lcci/
 //StackOfPlates StackOfPlates
+//https://leetcode-cn.com/problems/stack-of-plates-lcci/
 type StackOfPlates struct {
 	size   int
 	stacks [][]int
