@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/the-masseuse-lcci/
 func massage(nums []int) int {
 	//dp[i+2]=max(dp[i]+nums[i+2],dp[i-1])
 	if len(nums) == 0 {
