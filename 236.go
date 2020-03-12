@@ -1,5 +1,6 @@
-package temp
+package leetcode
 
+//https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/
 func lowestCommonAncestor2(root, p, q *TreeNode) *TreeNode {
 	if root == nil {
 		return nil
