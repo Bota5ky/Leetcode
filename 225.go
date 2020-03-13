@@ -1,7 +1,7 @@
 package leetcode
 
-//https://leetcode-cn.com/problems/implement-stack-using-queues/
 //MyStack MyStack
+//https://leetcode-cn.com/problems/implement-stack-using-queues/
 type MyStack struct {
 	q1 []int
 	q2 []int
