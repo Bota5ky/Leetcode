@@ -10,27 +10,27 @@ func restoreIPAddresses(s string) []string {
 	return ret
 }
 
-func addr(s string, pre string, n int, ret *[]string) { //pre表示前面累计的xxx.xxx.xx.
-	if len(s) == 0 {
+func addr(s, pre string, n int, ret *[]string) {
+	if len(s) < n || len(s) > 3*n {
 		return
 	}
 	if n == 1 {
+		if len(s) > 1 && s[0] == '0' {	//多位数首位不能为0
+			return
+		}
 		num, err := strconv.Atoi(s)
 		if err == nil && num < 256 {
-			if len(s) == 2 && num < 10 || len(s) == 3 && num < 100 || len(s) > 3 {
-				return
-			}
 			pre += s
 			*ret = append(*ret, pre)
 		}
 		return
 	}
-	for i := 1; i <= 3 && i <= len(s); i++ {
+	for i := 1; i <= 3 && i < len(s); i++ {	//不能超出len(s)
+		if i > 1 && s[0] == '0' {
+			return
+		}
 		num, err := strconv.Atoi(s[:i])
 		if err == nil && num < 256 {
-			if i == 2 && num < 10 || i == 3 && num < 100 {
-				break
-			}
 			temp := pre + s[:i] + "."
 			addr(s[i:], temp, n-1, ret)
 		}
