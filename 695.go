@@ -2,36 +2,23 @@ package leetcode
 
 //https://leetcode-cn.com/problems/max-area-of-island/
 func maxAreaOfIsland(grid [][]int) int {
-	visit := make(map[[2]int]bool)
+	//访问过的设置为0
 	max := 0
 	for i := 0; i < len(grid); i++ {
 		for j := 0; j < len(grid[i]); j++ {
-			cnt := area(grid, visit, i, j)
-			if max < cnt {
-				max = cnt
+			temp := area(grid, i, j)
+			if max < temp {
+				max = temp
 			}
 		}
 	}
 	return max
 }
 
-func area(grid [][]int, visit map[[2]int]bool, i int, j int) int {
-	if grid[i][j] == 0 || visit[[2]int{i, j}] {
+func area(grid [][]int, i, j int) int {
+	if i < 0 || i >= len(grid) || j < 0 || j >= len(grid[i]) || grid[i][j] == 0 {
 		return 0
 	}
-	cnt := 1
-	visit[[2]int{i, j}] = true
-	if i > 0 {
-		cnt += area(grid, visit, i-1, j)
-	}
-	if j > 0 {
-		cnt += area(grid, visit, i, j-1)
-	}
-	if i < len(grid)-1 {
-		cnt += area(grid, visit, i+1, j)
-	}
-	if j < len(grid[i])-1 {
-		cnt += area(grid, visit, i, j+1)
-	}
-	return cnt
+	grid[i][j] = 0
+	return 1 + area(grid, i-1, j) + area(grid, i+1, j) + area(grid, i, j-1) + area(grid, i, j+1)
 }
