@@ -2,28 +2,29 @@ package leetcode
 
 //https://leetcode-cn.com/problems/multiply-strings/
 func multiply(num1 string, num2 string) string {
-	//2位*5位 不超过2+5位
-	num := make([]int, len(num1)+len(num2))
-	for i := 0; i < len(num2); i++ {
-		for j := 0; j < len(num1); j++ {
-			num[i+j] += int(num2[len(num2)-1-i]-'0') * int(num1[len(num1)-1-j]-'0')
+	if num1 == "0" || num2 == "0" {
+		return "0"
+	}
+	l1, l2 := len(num1), len(num2)
+	l := l1 + l2
+	carry := make([]byte, l)
+	for i := l1; i > 0; i-- {
+		index := l2 + i - 1
+		n1 := num1[i-1] - '0'
+		for j := l2; j > 0; j-- {
+			n := carry[index] + n1*(num2[j-1]-'0') //计算
+			carry[index] = n % 10                  //当前值
+			index--
+			carry[index] += n / 10 //进位
 		}
 	}
-	pre := 0
-	for i := 0; i < len(num); i++ {
-		num[i] += pre
-		pre = num[i] / 10
-		num[i] %= 10
-	}
-	i := 0
-	for i = len(num) - 1; i > 0; i-- {
-		if num[i] != 0 {
-			break
+
+	j := -1
+	for i := 0; i < l; i++ {
+		if carry[i] != 0 && j == -1 {
+			j = i
 		}
+		carry[i] += '0'
 	}
-	var ret string
-	for ; i >= 0; i-- {
-		ret += string(num[i] + '0')
-	}
-	return ret
+	return string(carry[j:])
 }
