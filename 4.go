@@ -13,7 +13,7 @@ func findK(nums1, nums2 []int, i, j, k int) int {
 		return nums1[i+k-1]
 	}
 	if k == 1 {
-		return min1(nums1[i], nums2[j])
+		return min(nums1[i], nums2[j])
 	}
 	p1, p2 := i+k/2-1, j+k/2-1
 	if p1 >= len(nums1) {
@@ -26,11 +26,4 @@ func findK(nums1, nums2 []int, i, j, k int) int {
 		return findK(nums1, nums2, i, j+k/2, k-(p2-j+1))
 	}
 	return findK(nums1, nums2, i+k/2, j, k-(p1-i+1))
-}
-
-func min1(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
 }
