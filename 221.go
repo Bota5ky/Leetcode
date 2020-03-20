@@ -21,7 +21,7 @@ func maximalSquare(matrix [][]byte) int {
 			} else if matrix[i][j] == '0' {
 				temp[j] = 0
 			} else {
-				temp[j] = min(pre[j-1], temp[j-1], pre[j]) + 1
+				temp[j] = min3(pre[j-1], temp[j-1], pre[j]) + 1
 			}
 			if max < temp[j] {
 				max = temp[j]
@@ -32,7 +32,7 @@ func maximalSquare(matrix [][]byte) int {
 	return max * max
 }
 
-func min(a, b, c int) int {
+func min3(a, b, c int) int {
 	if a <= b && a <= c {
 		return a
 	}
