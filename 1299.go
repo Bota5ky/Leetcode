@@ -5,11 +5,7 @@ func replaceElements(arr []int) []int {
 	ret := make([]int, len(arr))
 	ret[len(ret)-1] = -1
 	for i := len(ret) - 2; i >= 0; i++ {
-		ret[i] = max(ret[i+1],arr[i+1])
+		ret[i] = max(ret[i+1], arr[i+1])
 	}
 	return ret
-}
-func max (x int ,y int )int {
-	if x<y {return y}
-	return x
 }
