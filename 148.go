@@ -54,7 +54,7 @@ func sortList2(head *ListNode) *ListNode {
 			for j := 0; j < i-1 && cur != nil; j++ {
 				cur = cur.Next
 			}
-			if cur == nil {
+			if cur == nil { // l2没有就没必要merge排序，直接退出
 				break
 			}
 			l2 := cur.Next
@@ -63,18 +63,18 @@ func sortList2(head *ListNode) *ListNode {
 			for j := 0; j < i-1 && cur != nil; j++ {
 				cur = cur.Next
 			}
-			var l3 *ListNode
+			var l3 *ListNode // l3赋值
 			if cur != nil {
 				l3 = cur.Next
 				cur.Next = nil
 			}
 			node := mergeList(l1, l2)
-			prehead.Next = node
+			prehead.Next = node	// pre 接上排序后的头节点
 			for node.Next != nil {
 				node = node.Next
 			}
-			node.Next = l3
-			prehead = node
+			node.Next = l3	// 接上排序后的尾节点
+			prehead = node	// pre 变为排序后的尾节点
 		}
 	}
 	return pre.Next
