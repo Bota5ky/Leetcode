@@ -1,22 +1,20 @@
 package leetcode
 
-//迭代
+//https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
 func inorderTraversal(root *TreeNode) []int {
-	if root == nil {
-		return []int{}
-	}
-	var res []int
-	stack := []*TreeNode{}
 	cur := root
+	var res []int
+	var stack []*TreeNode
 	for cur != nil || len(stack) > 0 {
-		for cur != nil {
+		if cur != nil {
 			stack = append(stack, cur)
 			cur = cur.Left
+		} else {
+			node := stack[len(stack)-1]
+			stack = stack[:len(stack)-1]
+			res = append(res, node.Val)
+			cur = node.Right
 		}
-		cur = stack[len(stack)-1]
-		stack = stack[:len(stack)-1]
-		res = append(res, cur.Val)
-		cur = cur.Right
 	}
 	return res
 }
