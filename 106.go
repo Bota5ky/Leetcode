@@ -1,7 +1,7 @@
 package leetcode
 
 //https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
-func buildTree(inorder []int, postorder []int) *TreeNode {
+func buildTree2(inorder []int, postorder []int) *TreeNode {
 	if len(inorder) == 0 {
 		return nil
 	}
