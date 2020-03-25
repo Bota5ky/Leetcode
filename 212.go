@@ -39,9 +39,9 @@ func dfsTrie(board [][]byte, i, j int, root *Trie, res *[]string) {
 	}
 	if root.Next[board[i][j]-'a'].EndStr != "" {
 		*res = append(*res, root.Next[board[i][j]-'a'].EndStr)
-		root.Next[board[i][j]-'a'].EndStr = ""
+		root.Next[board[i][j]-'a'].EndStr = ""	//剪枝，防止遍历到重复的单词
 	}
-	tempStr := board[i][j]
+	tempStr := board[i][j]	//防止重复经过
 	board[i][j] = 'z' + 1
 	dfsTrie(board, i-1, j, root.Next[tempStr-'a'], res)
 	dfsTrie(board, i+1, j, root.Next[tempStr-'a'], res)
