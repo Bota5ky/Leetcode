@@ -97,3 +97,65 @@ func (t *MedianFinder) FindMedian() float64 {
  * obj.AddNum(num);
  * param_2 := obj.FindMedian();
  */
+
+/* MAX & MIN heap written by myself
+type MedianFinder struct {
+    maxheap []int
+    minheap []int
+}
+//initialize your data structure here.
+func Constructor() MedianFinder {
+    return MedianFinder{}
+}
+func (t *MedianFinder) AddNum(num int)  {
+    //插入数字
+    if len(t.minheap)==0 || num>=t.minheap[0] {
+        t.minheap=append(t.minheap,num)
+    }else{
+        t.maxheap=append(t.maxheap,num)
+    }
+    //整理
+    heapifyMax(t.maxheap)
+    heapifyMin(t.minheap)
+    if len(t.maxheap)>len(t.minheap) {
+        temp:=t.maxheap[0]
+        t.maxheap=t.maxheap[1:]
+        t.minheap=append(t.minheap,temp)
+    }else if len(t.minheap)-len(t.maxheap)>1 {
+        temp:=t.minheap[0]
+        t.minheap=t.minheap[1:]
+        t.maxheap=append(t.maxheap,temp)
+    }
+}
+func (t *MedianFinder) FindMedian() float64 {
+	heapifyMax(t.maxheap)
+    heapifyMin(t.minheap)
+    l:=len(t.minheap)+len(t.maxheap)
+    if l%2==1 {
+        return float64(t.minheap[0])
+    }
+    return float64(t.minheap[0]+t.maxheap[0])/2.0
+}
+func heapifyMax(nums []int) {
+    last:=len(nums)/2-1
+    for i:=last;i>=0;i--{
+        left:=2*i+1
+        right:=2*i+2
+        max:=i
+        if left<len(nums) && nums[left]>nums[max] {max=left}
+        if right<len(nums) && nums[right]>nums[max] {max=right}
+        nums[i],nums[max]=nums[max],nums[i]
+    }
+}
+func heapifyMin(nums []int) {
+    last:=len(nums)/2-1
+    for i:=last;i>=0;i--{
+        left:=2*i+1
+        right:=2*i+2
+        min:=i
+        if left<len(nums) && nums[left]<nums[min] {min=left}
+        if right<len(nums) && nums[right]<nums[min] {min=right}
+        nums[i],nums[min]=nums[min],nums[i]
+    }
+}
+ */
