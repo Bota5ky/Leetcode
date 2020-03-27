@@ -1,10 +1,10 @@
 package leetcode
 
 //https://leetcode-cn.com/problems/copy-list-with-random-pointer/
-func copyRandomList(head *Node) *Node {
+func copyRandomList(head *Node2) *Node2 {
 	cur := head
 	for cur != nil {
-		newnode := &Node{Val: cur.Val, Next: cur.Next}
+		newnode := &Node2{Val: cur.Val, Next: cur.Next}
 		cur.Next = newnode
 		cur = cur.Next.Next
 	}
@@ -24,4 +24,11 @@ func copyRandomList(head *Node) *Node {
 		cur = cur.Next
 	}
 	return ret
+}
+
+//Node2 Node
+type Node2 struct {
+	Val    int
+	Next   *Node2
+	Random *Node2
 }
