@@ -3,12 +3,12 @@ package leetcode
 //https://leetcode-cn.com/problems/short-encoding-of-words/
 func minimumLengthEncoding(words []string) int {
 	cnt := 0
-	root := &trie{}
+	root := &trie2{}
 	for i := 0; i < len(words); i++ {
 		word, cur := words[i], root
 		for j := len(word) - 1; j >= 0; j-- {
 			if cur.next[word[j]-'a'] == nil {
-				newnode := &trie{}
+				newnode := &trie2{}
 				cur.next[word[j]-'a'] = newnode
 				if j == 0 {
 					newnode.length = len(word)
@@ -25,7 +25,7 @@ func minimumLengthEncoding(words []string) int {
 }
 
 //倒序字典树
-type trie struct {
+type trie2 struct {
 	length int
-	next   [26]*trie
+	next   [26]*trie2
 }
