@@ -15,3 +15,23 @@ func traverse(root *TreeNode, nums *[]int) {
 	*nums = append(*nums, root.Val)
 	traverse(root.Right, nums)
 }
+//迭代 0(H+k)复杂度
+func kthSmallest3(root *TreeNode, k int) int {
+	var stack []*TreeNode
+	cur := root
+	for cur != nil || len(stack) > 0 {
+		if cur != nil {
+			stack = append(stack, cur)
+			cur = cur.Left
+		} else {
+			cur = stack[len(stack)-1]
+			k--
+			if k == 0 {
+				return cur.Val
+			}
+			stack = stack[:len(stack)-1]
+			cur = cur.Right
+		}
+	}
+	return -1
+}
