@@ -78,13 +78,6 @@ func (c *codec) deserialize(data string) *TreeNode {
  * ans := obj.deserialize(data);
  */
 
-/**
- * Your codec object will be instantiated and called as such:
- * obj := Constructor();
- * data := obj.serialize(root);
- * ans := obj.deserialize(data);
- */
-
 //前序
 /* type codec struct {
 	sb    strings.Builder
