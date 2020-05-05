@@ -11,8 +11,8 @@ func postorderTraversal(root *TreeNode) []int {
 			stack = append(stack, cur)
 			cur = cur.Right
 		} else {
-			cur=stack[len(stack)-1].Left
-            stack=stack[:len(stack)-1]
+			cur = stack[len(stack)-1].Left
+			stack = stack[:len(stack)-1]
 		}
 	}
 	return res
