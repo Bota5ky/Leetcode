@@ -11,12 +11,12 @@ func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 	}
 	for i := 0; i < len(cho); i++ {
 		for j := 0; j < len(cho[i]); j++ {
-			helper(cho, obstacleGrid, i, j)
+			helper1(cho, obstacleGrid, i, j)
 		}
 	}
 	return cho[len(cho)-1][len(cho[0])-1]
 }
-func helper(cho, obstacleGrid [][]int, i, j int) {
+func helper1(cho, obstacleGrid [][]int, i, j int) {
 	if obstacleGrid[i][j] == 1 {
 		return
 	}
