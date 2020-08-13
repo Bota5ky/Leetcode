@@ -14,7 +14,7 @@ func getPermutation(n int, k int) string {
 		fac /= n
 		pos := k / fac
 		k %= fac
-		res += string('0' + nums[pos])
+		res += string('0' + byte(nums[pos]))
 		nums = append(nums[:pos], nums[pos+1:]...)
 	}
 	return res
