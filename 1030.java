@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Comparator;
 
+//https://leetcode-cn.com/problems/matrix-cells-in-distance-order/
 class Solution1030 {
     public int[][] allCellsDistOrder(int R, int C, int r0, int c0) {
         int[][] res = new int[R * C][2];
@@ -20,7 +21,7 @@ class Solution1030 {
         // System.out.println(res);
         return res;
     }
-
+    
     public static void main(String[] args) {
         Solution1030 sol = new Solution1030();
         sol.allCellsDistOrder(1, 2, 0, 0);
