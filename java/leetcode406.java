@@ -1,8 +1,10 @@
+package java;
+
 import java.util.Arrays;
 import java.util.Comparator;
 
 //https://leetcode-cn.com/problems/queue-reconstruction-by-height/
-class Solution406 {
+class leetcode406 {
     public int[][] reconstructQueue(int[][] people) {
         //先按照个子从高到低排序，如果个子一样，则按照k从小到大排列，这样就得到了一个方便后面插入的队列
         Arrays.sort(people, new Comparator<int[]>() {
@@ -37,7 +39,7 @@ class Solution406 {
     public static void main(String[] args) {
         int[][] people = { { 7, 0 }, { 4, 4 }, { 7, 1 }, { 5, 0 }, { 6, 1 }, { 5, 2 } };
         //ans [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
-        Solution406 sol = new Solution406();
+        leetcode406 sol = new leetcode406();
         sol.reconstructQueue(people);
     }
 }

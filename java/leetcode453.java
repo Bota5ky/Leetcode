@@ -1,3 +1,5 @@
+package java;
+
 import java.util.Arrays;
 
 //https://leetcode-cn.com/problems/minimum-moves-to-equal-array-elements/
