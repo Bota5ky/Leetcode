@@ -1,5 +1,6 @@
 package java;
 
+//https://leetcode-cn.com/problems/image-smoother/
 public class leetcode661 {
     public int[][] imageSmoother(int[][] M) {
         int[][] res = new int[M.length][M[0].length];
