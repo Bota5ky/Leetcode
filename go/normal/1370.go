@@ -12,14 +12,14 @@ func sortString(s string) string {
 	for sum > 0 {
 		for i := 0; i < 26 && sum > 0; i++ {
 			if cnt[i] > 0 {
-				res += string(i + 'a')
+				res += string(byte(i) + 'a')
 				cnt[i]--
 				sum--
 			}
 		}
 		for i := 25; i >= 0 && sum > 0; i-- {
 			if cnt[i] > 0 {
-				res += string(i + 'a')
+				res += string(byte(i) + 'a')
 				cnt[i]--
 				sum--
 			}
