@@ -1,4 +1,4 @@
-package java;
+package leetcodejava;
 
 //https://leetcode-cn.com/problems/valid-anagram/
 public class leetcode242 {

@@ -1,4 +1,4 @@
-package java;
+package leetcodejava;
 
 //https://leetcode-cn.com/problems/guess-number-higher-or-lower/
 public class leetcode374 extends GuessGame {

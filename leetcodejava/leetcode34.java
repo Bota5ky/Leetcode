@@ -1,4 +1,4 @@
-package java;
+package leetcodejava;
 
 //https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 public class leetcode34 {

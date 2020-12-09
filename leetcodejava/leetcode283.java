@@ -1,4 +1,4 @@
-package java;
+package leetcodejava;
 
 //https://leetcode-cn.com/problems/move-zeroes/
 public class leetcode283 {

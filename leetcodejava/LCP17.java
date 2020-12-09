@@ -1,4 +1,4 @@
-package java;
+package leetcodejava;
 
 //https://leetcode-cn.com/problems/nGK0Fy/
 public class LCP17 {

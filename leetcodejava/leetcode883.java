@@ -1,4 +1,4 @@
-package java;
+package leetcodejava;
 
 //https://leetcode-cn.com/problems/projection-area-of-3d-shapes/
 public class leetcode883 {
